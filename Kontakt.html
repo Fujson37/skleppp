@@ -1,0 +1,39 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Internetowy - Kontakt</title>
+    <link rel="stylesheet" href="CSS.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Sklep Internetowy</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Koszyk.html">Koszyk <span class="cart-count">0</span></a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Kontakt</h2>
+    <form id="contactForm" onsubmit="submitContactForm(event)">
+        <div>
+            <label for="contactName">Imię:</label><br>
+            <input type="text" id="contactName" name="contactName" required>
+        </div>
+        <div>
+            <label for="contactMessage">Wiadomość:</label><br>
+            <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+        </div>
+        <button type="submit" style="margin-top: 1rem;">Wyślij</button>
+    </form>
+</div>
+
+<script src="JS.js"></script>
+
+</body>
+</html>

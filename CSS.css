@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* Ogólne style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product p {
+    color: #666;
+}
+
+.product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+
+/* Koszyk */
+.cart-count {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-items li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items li:last-child {
+    border-bottom: none;
+}
+
+.checkout {
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkout:hover {
+    background-color: #0056b3;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 100%;
+    }
+}

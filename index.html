@@ -1,0 +1,70 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Internetowy - Strona Główna</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+
+<header>
+    <h1>Sklep perkusyjny - Frank</h1>
+    <nav>
+        <a href="Sklep_internetowy.html">Home</a>
+        <a href="Kontakt.html">Kontakt</a>
+        <a href="Koszyk.html">Koszyk <span class="cart-count">0</span></a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="product-list">
+        <div class="product">
+            <img src="dw.png" alt="Perkusja">
+            <div class="product-details">
+                <h2>Perkusja</h2>
+                <p>Perkusja akustyczna. Cena: 2000 zł</p>
+                <button onclick="addToCart('Perkusja', 2000)">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="zil.png" alt="Talerze">
+            <div class="product-details">
+                <h2>Talerze</h2>
+                <p>Talerze perkusyjne. Cena: 4000 zł</p>
+                <button onclick="addToCart('Talerze', 4000)">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="wer.png" alt="Werbel">
+            <div class="product-details">
+                <h2>Werbel</h2>
+                <p>Werbel stalowy. Cena: 1000 zł</p>
+                <button onclick="addToCart('Werbel', 1000)">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="kon.png" alt="Pałki">
+            <div class="product-details">
+                <h2>Pałki</h2>
+                <p>Pałki 5A. Cena: 30 zł</p>
+                <button onclick="addToCart('Pałki', 30)">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="bon.png" alt="Statywy">
+            <div class="product-details">
+                <h2>Statywy</h2>
+                <p>Statywy zestaw. Cena: 1500 zł</p>
+                <button onclick="addToCart('Statywy', 1500)">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <!-- Dodaj więcej produktów tutaj -->
+    </div>
+</div>
+
+<script src="JS.js"></script>
+
+</body>
+</html>

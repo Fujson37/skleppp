@@ -1,0 +1,32 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Internetowy - Koszyk</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+
+<header>
+    <h1>Sklep Internetowy</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Koszyk</h2>
+    <ul class="cart-items" id="cartItems">
+        <!-- Produkty w koszyku zostaną dodane dynamicznie -->
+    </ul>
+    <p><strong>Łączna kwota: <span id="totalPrice">0</span> zł</strong></p>
+    <button class="checkout" onclick="checkout()">Kup teraz</button>
+</div>
+
+<script src="JS.js"></script>
+
+</body>
+</html>
